@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+#app {
+  background-color: darkslategrey;
+  color: goldenrod;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  background-color: inherit;
+  color: inherit;
+  height: 100%;
+  font-size: 24px;
+  resize: none;
+}
+
+iframe {
+  background-color: #ffff;
+  height: 100%;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 10px 1fr;
+  grid-template-columns: 1fr 10px 1fr;
+  height: 100vh;
+}
+
+.gutter-col {
+  grid-row: 1/-1;
+  cursor: col-resize;
+}
+
+.gutter-col-1 {
+  grid-column: 2;
+}
+
+.gutter-row {
+  grid-column: 1/-1;
+  cursor: row-resize;
+}
+
+.gutter-row-1 {
+  grid-row: 2;
+}
